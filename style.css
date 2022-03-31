@@ -9,3 +9,30 @@
     --clr-neutral-dark-blue: hsl(213, 19%, 18%);
     --clr-neutral-very-dark-blue: hsl(216, 12%, 8%);
 }
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-size: 15px;
+    font-family: 'Overpass', sans-serif;
+    background: var(--clr-neutral-very-dark-blue);
+}
+
+.wrapper {
+    max-width: 375px;
+    min-height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.component {
+    background: var(--clr-neutral-dark-blue);
+    padding: 2em;
+    border-radius: 7px;
+}
