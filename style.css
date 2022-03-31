@@ -36,3 +36,14 @@ body {
     padding: 2em;
     border-radius: 7px;
 }
+
+.component .question {
+    color: var(--clr-neutral-white);
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.component .main-text {
+    color: var(--clr-neutral-medium-grey)
+}
+
