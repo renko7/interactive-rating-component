@@ -36,7 +36,6 @@ body {
     background: var(--clr-neutral-dark-blue);
     padding: 2em;
     border-radius: 25px;
-    display: none;
 }
 
 .header {
@@ -130,4 +129,8 @@ body {
     padding: 0.5em 0.625em;
     border-radius: 25px;
     display: inline-block;
+}
+
+.hide {
+    display: none;
 }
