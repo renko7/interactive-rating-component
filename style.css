@@ -1,0 +1,110 @@
+:root {
+    /* PRIMARY COLORS */
+    --clr-primary-orange: hsl(25, 97%, 53%);
+
+    /* NEUTRAL COLORS */
+    --clr-neutral-white: hsl(0, 0%, 100%);
+    --clr-neutral-light-grey: hsl(217, 12%, 63%);
+    --clr-neutral-medium-grey: hsl(216, 12%, 54%);
+    --clr-neutral-dark-blue: hsl(213, 19%, 18%);
+    --clr-neutral-very-dark-blue: hsl(216, 12%, 8%);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-size: 15px;
+    font-family: 'Overpass', sans-serif;
+    background: var(--clr-neutral-very-dark-blue);
+}
+
+.wrapper {
+    max-width: 375px;
+    min-height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.component {
+    background: var(--clr-neutral-dark-blue);
+    padding: 2em;
+    border-radius: 25px;
+}
+
+.component .question {
+    color: var(--clr-neutral-white);
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-bottom: 0;
+}
+
+.component .main-text {
+    color: var(--clr-neutral-medium-grey)
+}
+
+/* STAR IMAGE */
+
+.component .star {
+    border-radius: 50%;
+    padding: 1em;
+    background-color: var(--clr-neutral-very-dark-blue);
+}
+
+/* RATINGS */
+
+.ratings .selections {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2em;
+}
+
+.ratings input {
+    display: none;
+    color: var(--clr-neutral-medium-grey);
+    background-color: var(--clr-neutral-very-dark-blue);
+    width: 16.5%;
+    padding: 1em;
+    text-align: center;
+}
+
+.ratings label {
+    color: var(--clr-neutral-medium-grey);
+    background-color: var(--clr-neutral-very-dark-blue);
+    width: 16.5%;
+    padding: 1em;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.ratings label:hover {
+    background-color: var(--clr-primary-orange);
+    color: var(--clr-neutral-white);
+}
+
+.ratings .selections input:checked + label {
+    background-color: var(--clr-neutral-light-grey);
+    color: var(--clr-neutral-white);
+}
+
+/* SUBMIT */
+
+.component .submit-btn {
+    background-color: var(--clr-primary-orange);
+    color: var(--clr-neutral-white);
+    text-align: center;
+    display: block;
+    font-weight: 700;
+    padding: 1em 1.25em;
+    border-radius: 100px;
+}
+
+.component .submit-btn:hover {
+    background-color: var(--clr-neutral-white);
+    color: var(--clr-primary-orange);
+}
