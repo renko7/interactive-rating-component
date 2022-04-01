@@ -34,7 +34,7 @@ body {
 .component {
     background: var(--clr-neutral-dark-blue);
     padding: 2em;
-    border-radius: 7px;
+    border-radius: 25px;
 }
 
 .component .question {
@@ -49,11 +49,10 @@ body {
 
 /* RATINGS */
 
-.ratings {
+.ratings .selections {
     display: flex;
     justify-content: space-between;
-    padding: 0;
-    margin-bottom: 1.5em;
+    margin-bottom: 1em;
 }
 
 .ratings input {
